@@ -1,5 +1,5 @@
 # DanQ-based-epigenetic-prediction-of-botanical-genome
-# ===============
+===============
 # 1. Build DeepSEA data for model training
 
 ```
@@ -25,7 +25,7 @@ $ python build_DeepSEA_data.py\
 --test_data_filename data/ath_data/test_data.npy \
 --test_labels_filename data/ath_data/test_labels.npy
 ```
-# ===============
+===============
 # 2. Train your model
 ```
 $ python DanQ_train_refreshed.py\
@@ -44,9 +44,8 @@ $ python DanQ_train_with_hyperparameter.py\
 --output_model_filepath DanQ_bestmodel.h5 \
 --output_loss_curve_filepath training_valid_loss_curve.png
 ```
-# ===============
+===============
 # 3.Evaluate your model
-# ===============
 ```
 $ python DanQ_test_refreshed.py \
 —test_file path data/osa_data/test.mat \
