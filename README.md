@@ -1,6 +1,9 @@
 # DanQ-based-epigenetic-prediction-of-botanical-genome
 DanQ is a hybrid convolutional and recurrent neural network model for predicting the function of DNA de novo from sequence proposed by Quang, D. and Xie, X. Compared to orginial DanQ, we changed the scale of the model to adapt plant DeepSEA data sets, introduce batch normalization layers and L2 regularization.
 
+![image](https://github.com/user-attachments/assets/a1b704ee-b442-4dec-85c3-59031063ce18)
+
+
 # 1. INSTALL
 ```
 $ conda create -n danq_env python=3.8
