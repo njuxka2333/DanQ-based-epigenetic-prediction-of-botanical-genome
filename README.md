@@ -7,7 +7,6 @@ $ conda create -n danq_env python=3.8
 $ pip install numpy pandas matplotlib scipy Biopython h5py scikit-learn scikit-optimize tensorflow-gpu==2.8.0
 $ conda activate danq_env
 $ pip install biopython h5py numpy matplotlib pandas scikit-learn scikit-optimize scipy tensorflow-gpu tqdm
-
 ```
 
 # 2. Build DeepSEA data for model training
@@ -30,13 +29,11 @@ After activating the python enviorment and setting up, perform build_DeepSEA_dat
 
 ```
 python DanQ_train.py
-
 ```
 
 # 3.Evaluate your model
 
 ```
 python DanQ_test.py
-
 ```
 
