@@ -7,7 +7,6 @@ DanQ is a hybrid convolutional and recurrent neural network model for predicting
 # 1. INSTALL
 ```
 $ conda create -n danq_env python=3.8
-$ pip install numpy pandas matplotlib scipy Biopython h5py scikit-learn scikit-optimize tensorflow-gpu==2.8.0
 $ conda activate danq_env
 $ pip install biopython h5py numpy matplotlib pandas scikit-learn scikit-optimize scipy tensorflow-gpu tqdm
 ```
