@@ -83,3 +83,64 @@ git clone https://github.com/njuxka2333/DanQ-based-epigenetic-prediction-of-bota
 cd DanQ-based-epigenetic-prediction-of-botanical-genome/Original_DanQ
 ```
 该仓库包含基于 TensorFlow 重构的 DanQ 模型代码，适配 Python 3.x 环境。原始版本依赖 Python 2.7，已不再兼容现代环境。
+
+### 3.2 配置 Python 环境
+
+```bash
+conda create -n danq_env python=3.8
+conda activate danq_env
+pip install -r requirements.txt
+```
+
+### 3.3 构建数据集
+使用以下命令将原始序列与标签文件构建成 DeepSEA 格式的 .mat 文件：
+
+```bash
+python build_DeepSEA_data.py \
+--tag_flie original/tag.txt \
+--train_valid_file original_data/mergedtag_1024_512.fa \
+--test_file original_data/mergedtag_1024_500.fa \
+--train \
+--train_filename data/train.mat \
+--valid_filename data/valid.mat \
+--test_filename data/test.mat
+```
+
+（可选）可视化标签在染色体上的分布：
+
+```bash
+python EDA.py
+```
+
+
+### 3.4 模型训练
+
+```bash
+python DanQ_train.py
+```
+
+如果你希望通过贝叶斯优化自动寻找超参数（如批大小、epoch 数、学习率等），可执行：
+
+```bash
+python DanQ_train_with_Bayesian_optimization.py
+```
+
+
+贝叶斯优化基于高斯过程模型估计目标函数分布，结合概率上限策略（Upper Confidence Bound）动态选择下一个评估点。可在代码中设置最大评估轮数与目标指标。
+
+
+### 3.5 模型评估
+
+```bash
+python DanQ_test.py
+```
+
+
+评估脚本将输出以下内容：
+
+多标签的 ROC 曲线与 PR 曲线；
+
+平均 F1 分数、精准率（Precision）、召回率（Recall）；
+
+预测结果与真实标签之间的 Pearson 和 Spearman 相关系数。
+
