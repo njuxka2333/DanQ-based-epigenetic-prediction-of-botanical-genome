@@ -50,3 +50,35 @@ x = Dense(925, activation='relu')(x)
 output = Dense(num_labels, activation='sigmoid')(x)
 model = Model(inputs=input, outputs=output)
 ```
+
+### Step 3️⃣：训练模型
+
+- 使用 `model.fit(...)` 或自定义 `DataGenerator` 实现分批训练；
+- 常配合 `EarlyStopping`、`ModelCheckpoint` 等回调函数以控制训练；
+- 数据集较大时，建议使用 `tf.data.Dataset` 或多线程的数据生成器以提高效率。
+
+---
+
+### Step 4️⃣：模型评估与可视化
+
+- 评估指标包括：
+  - **AUC**（ROC曲线下面积）
+  - **AUPRC**（精确率-召回率曲线下面积）
+  - **F1-score**
+  - **Pearson 相关系数**
+  - **Spearman 相关系数**
+- 可视化方式：
+  - 绘制 ROC 和 PR 曲线；
+  - 结合 In Silico Mutagenesis（ISM）生成突变热图；
+  - 叠加 BigWig 文件实现模型预测与实验数据对比。
+
+---
+
+## 3. 使用方法
+
+### 3.1 获取 DanQ 代码
+
+```bash
+git clone https://github.com/njuxka2333/DanQ-based-epigenetic-prediction-of-botanical-genome.git
+cd DanQ-based-epigenetic-prediction-of-botanical-genome/Original_DanQ
+```
