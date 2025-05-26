@@ -39,3 +39,6 @@ python DanQ_train.py
 python DanQ_test.py
 ```
 
+#
+Please view the Original_DanQ folder if you need classic DanQ mdeol which is compatiable with python 3.8
+
