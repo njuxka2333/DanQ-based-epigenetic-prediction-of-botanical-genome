@@ -82,3 +82,4 @@ model = Model(inputs=input, outputs=output)
 git clone https://github.com/njuxka2333/DanQ-based-epigenetic-prediction-of-botanical-genome.git
 cd DanQ-based-epigenetic-prediction-of-botanical-genome/Original_DanQ
 ```
+该仓库包含基于 TensorFlow 重构的 DanQ 模型代码，适配 Python 3.x 环境。原始版本依赖 Python 2.7，已不再兼容现代环境。
