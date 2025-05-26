@@ -1,3 +1,2 @@
-Put.mat files here. You can download them from here
-
-()
+We used Chip_hub data from Dijun Chen lab, Nanjing University.
+If you need them, please contact with Prof.Chen
