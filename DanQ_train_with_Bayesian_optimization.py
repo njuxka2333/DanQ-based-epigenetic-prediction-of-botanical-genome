@@ -23,9 +23,9 @@ strategy = tf.distribute.OneDeviceStrategy("/gpu:0")
 logging.basicConfig(level=logging.INFO)
 logging.info('loading data')
 
-trainmat = h5py.File('data/zma_data/train.mat', 'r')
+trainmat = h5py.File('data/osa_data/train.mat', 'r')
 logging.info('train.mat loaded')
-validmat = h5py.File('data/zma_data/valid.mat', 'r')
+validmat = h5py.File('data/osa_data/valid.mat', 'r')
 logging.info('valid.mat loaded')
 
 X_train, y_train = np.array(trainmat['trainxdata']), np.array(trainmat['traindata'])
@@ -79,7 +79,7 @@ plt.title('Training and Validation Loss')
 plt.xlabel('Epoch')
 plt.ylabel('Loss')
 plt.legend()
-plt.savefig('loss_curve_zma.png')
+plt.savefig('loss_curve_osa.png')
 
 fig, axes = plt.subplots(2, 4, figsize=(18, 12))
 # training loss with batch
@@ -137,5 +137,5 @@ axes[1, 3].set_ylabel('Dice Score')
 axes[1, 3].set_ylim(0, 1)
 axes[1, 3].legend()
 
-plt.savefig('training_validation_metrics_zma.png')
+plt.savefig('training_validation_metrics_osa.png')
 plt.close()
