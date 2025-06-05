@@ -35,9 +35,9 @@ python DanQ_train.py
 
 |            | Epochs | Batch Size | Learning Rate |
 |------------|--------|------------|----------------|
-| *O. sativa*   | 50     | 128        | 0.001          |
-| *Z. mays*      | 40     | 64         | 0.0005         |
-| *A. thaliana*  | 60     | 256        | 0.0001         |
+| *O. sativa*   | 25     | 122        | 0.00010880242882938465          |
+| *Z. mays*      | 20     | 80         | 8.674559776324777e-05         |
+| *A. thaliana*  | 28     | 67        | 0.0003748321662847933         |
 
 
 # 3.Evaluate your model
