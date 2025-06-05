@@ -33,6 +33,13 @@ After activating the python enviorment and setting up, perform build_DeepSEA_dat
 python DanQ_train.py
 ```
 
+|            | Epochs | Batch Size | Learning Rate |
+|------------|--------|------------|----------------|
+| *O. sativa*   | 50     | 128        | 0.001          |
+| *Z. mays*      | 40     | 64         | 0.0005         |
+| *A. thaliana*  | 60     | 256        | 0.0001         |
+
+
 # 3.Evaluate your model
 
 ```
