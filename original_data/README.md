@@ -1,3 +1,1 @@
-We used Chip_hub data from Dijun Chen lab, Nanjing University.
-
-If you need them, please contact with Prof.Chen
+You can download Oryza sativa，Zea mays and Arabidopsis thaliana data from [Chip-hub](https://biobigdata.nju.edu.cn/ChIPHub/)
