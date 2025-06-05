@@ -1,1 +1,1 @@
-
+Put .hdf5 weight files here. You can download weights for the [O. sativa] (https://cbcl.ics.uci.edu/public_data/DanQ/DanQ_bestmodel.hdf5), [Z. mays] (https://cbcl.ics.uci.edu/public_data/DanQ/DanQ-JASPAR_bestmodel.hdf5)  and [A. thaliana] () models.
